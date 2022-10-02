@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>login pag</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+        <form action="login.php" method="POST">
+            <label for="firstname"><b>first name</b></label>
+            <input type="text" name="firstname" placeholder="first name" value="">
+            <span class="error">
+                <?php $errors['firstnameerror'] ?>
+            </span>
+            <label for="lastname">last name</label>
+            <input type="text" name="lastname" placeholder="last name" value="">
+            <span class="error"></span>
+            <label for="email">email</label>
+            <input type="text" name="email" placeholder="email" value="">
+            <span class="error"></span>
+            <button type="submit" name="submit">send</button>
+        </form>
+    </div>
+</body>
+
+</html>
